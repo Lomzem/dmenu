@@ -9,14 +9,17 @@ static const char *fonts[] = {
 	"JetBrainsMonoNL Nerd Font,JetBrainsMonoNL NF:style=Regular:size=12"
 };
 static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
-static const char *colors[SchemeLast][2] = {
-	/*     fg         bg       */
-	[SchemeNorm] = { "#bbbbbb", "#222222" },
-	[SchemeSel] = { "#eeeeee", "#005577" },
-	[SchemeSelHighlight] = { "#ffc978", "#005577" },
-	[SchemeNormHighlight] = { "#ffc978", "#222222" },
-	[SchemeOut] = { "#000000", "#00ffff" },
-};
+
+#include "/home/lomzem/.cache/wal/colors-wal-dmenu.h"
+
+// static const char *colors[SchemeLast][2] = {
+// 	/*     fg         bg       */
+// 	[SchemeNorm] = { "#bbbbbb", "#222222" },
+// 	[SchemeSel] = { "#eeeeee", "#005577" },
+// 	[SchemeSelHighlight] = { "#ffc978", "#005577" },
+// 	[SchemeNormHighlight] = { "#ffc978", "#222222" },
+// 	[SchemeOut] = { "#000000", "#00ffff" },
+// };
 
 static const unsigned int alphas[SchemeLast][2] = {
 	[SchemeNorm] = { OPAQUE, alpha },
